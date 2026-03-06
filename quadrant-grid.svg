@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#111">
+    Select the quadrant that best describes you
+  </text>
+
+  <!-- Grid frame -->
+  <rect x="330" y="140" width="700" height="460" fill="#fff" stroke="#111" stroke-width="4"/>
+
+  <!-- Internal grid lines -->
+  <line x1="680" y1="140" x2="680" y2="600" stroke="#111" stroke-width="4"/>
+  <line x1="330" y1="370" x2="1030" y2="370" stroke="#111" stroke-width="4"/>
+
+  <!-- Axis arrows -->
+  <!-- X axis -->
+  <line x1="330" y1="650" x2="1030" y2="650" stroke="#111" stroke-width="4"/>
+  <polygon points="1030,650 1008,636 1008,664" fill="#111"/>
+  <!-- Y axis -->
+  <line x1="270" y1="600" x2="270" y2="140" stroke="#111" stroke-width="4"/>
+  <polygon points="270,140 256,162 284,162" fill="#111"/>
+
+  <!-- Axis labels -->
+  <text x="680" y="710" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#111">
+    Personal use (Low → High)
+  </text>
+
+  <text x="140" y="370" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#111"
+        transform="rotate(-90 140 370)">
+    Functional use (Low → High)
+  </text>
+
+  <!-- Small endpoint labels -->
+  <text x="330" y="680" text-anchor="start"
+        font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+    Low personal
+  </text>
+  <text x="1030" y="680" text-anchor="end"
+        font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+    High personal
+  </text>
+  <text x="330" y="125" text-anchor="start"
+        font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+    High functional
+  </text>
+  <text x="330" y="625" text-anchor="start"
+        font-family="Arial, Helvetica, sans-serif" font-size="18" fill="#111">
+    Low functional
+  </text>
+
+  <!-- Quadrant labels -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="26" fill="#111">
+    <!-- Top-left -->
+    <text x="505" y="265" text-anchor="middle">Low personal</text>
+    <text x="505" y="305" text-anchor="middle">+ High functional</text>
+
+    <!-- Top-right -->
+    <text x="855" y="265" text-anchor="middle">High personal</text>
+    <text x="855" y="305" text-anchor="middle">+ High functional</text>
+
+    <!-- Bottom-left -->
+    <text x="505" y="495" text-anchor="middle">Low personal</text>
+    <text x="505" y="535" text-anchor="middle">+ Low functional</text>
+
+    <!-- Bottom-right -->
+    <text x="855" y="495" text-anchor="middle">High personal</text>
+    <text x="855" y="535" text-anchor="middle">+ Low functional</text>
+  </g>
+</svg>
